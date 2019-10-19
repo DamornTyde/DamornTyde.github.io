@@ -1,5 +1,10 @@
-## Welcome to my main page
+# Welcome to my main page
 
-my projects are
 
-- [Clock](https://damorntyde.github.io/clock)
+
+## My projects are
+
+
+# Clock animation
+
+[Showcase](https://damorntyde.github.io/clock) [code](https://www.github.com/damorntyde/clock)
