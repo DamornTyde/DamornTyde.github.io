@@ -5,6 +5,6 @@
 ## My projects are
 
 
-# Clock animation
+1. Clock animation
 
 [Showcase](https://damorntyde.github.io/clock) [code](https://www.github.com/damorntyde/clock)
