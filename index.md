@@ -7,4 +7,4 @@
 
 1. Clock animation
 
-[Showcase](https://damorntyde.github.io/clock) [code](https://www.github.com/damorntyde/clock)
+([Showcase](https://damorntyde.github.io/clock)) ([code](https://www.github.com/damorntyde/clock))
