@@ -1,4 +1,4 @@
-fetch('https://users/DamornTyde/repos')
+fetch(functions.php)
 .then(response => response.json())
 .then(data => {
     console.log(data);
