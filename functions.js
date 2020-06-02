@@ -10,8 +10,8 @@ fetch("https://api.github.com/users/DamornTyde/repos")
             temp.appendChild(header);
             descr.appendChild(document.createTextNode(item.description));
             temp.appendChild(descr);
-            temp.appendChild(createButton("code", () => window.open(`https://www.github.com/DamornTyde/${item.name}`)));
-            temp.appendChild(createButton("showcase", () => window.open(`https://damorntyde.github.io/${item.name}`)));
+            temp.appendChild(createButton("code", `https://www.github.com/DamornTyde/${item.name}`));
+            temp.appendChild(createButton("showcase", `https://damorntyde.github.io/${item.name}`));
             document.querySelector("main").appendChild(temp);
         }
     });
@@ -21,6 +21,6 @@ fetch("https://api.github.com/users/DamornTyde/repos")
 function createButton(text, onClicked) {
     const button = document.createElement("button");
     button.appendChild(document.createTextNode(text));
-    button.addEventListener("click", onClicked);
+    button.addEventListener("click", () => window.open(onClicked));
     return button;
 }
