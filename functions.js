@@ -6,12 +6,14 @@ fetch("https://api.github.com/users/DamornTyde/repos")
             const temp = document.createDocumentFragment();
             const header = document.createElement("h2");
             const descr = document.createElement("p");
+            const buttons = document.createElement("div");
             header.appendChild(document.createTextNode(item.name));
             temp.appendChild(header);
             descr.appendChild(document.createTextNode(item.description));
             temp.appendChild(descr);
-            temp.appendChild(createButton("code", `https://www.github.com/DamornTyde/${item.name}`));
-            temp.appendChild(createButton("showcase", `https://damorntyde.github.io/${item.name}`));
+            buttons.appendChild(createButton("code", `https://www.github.com/DamornTyde/${item.name}`));
+            buttons.appendChild(createButton("showcase", `https://damorntyde.github.io/${item.name}`));
+            temp.appendChild(buttons);
             document.querySelector("main").appendChild(temp);
         }
     });
